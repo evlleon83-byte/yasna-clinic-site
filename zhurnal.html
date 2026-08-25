@@ -11,53 +11,82 @@
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#2E2E2E" />
 
-<title>Цифровая лицензия — ЯСНА</title>
-<meta name="description" content="QR-код и выписка из реестра лицензий Росздравнадзора клиники ЯСНА (приказ Минздрава России № 118н)." />
-<!-- "follow" even on noindex pages (search.html, 404.html): keeps the crawl
-     path open to the rest of the site through their links rather than
-     dead-ending it, per Google's own guidance for internal search pages. -->
+<title>Журнал ЯСНА — статьи о косметологии и уходе</title>
+<meta name="description" content="Журнал ЯСНА: понятные статьи о процедурах эстетической медицины — как устроены методики, чем они отличаются и как выбрать подходящую вместе с врачом." />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://yasna.clinic/license.html" />
+<link rel="canonical" href="https://yasna.clinic/zhurnal.html" />
 
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://yasna.clinic/license.html" />
-<meta property="og:title" content="Цифровая лицензия — ЯСНА" />
-<meta property="og:description" content="QR-код и выписка из реестра лицензий Росздравнадзора клиники ЯСНА (приказ Минздрава России № 118н)." />
-<meta property="og:image" content="https://yasna.clinic/assets/img/logo/yasna-mark-color.png" />
-<meta property="og:image:width" content="900" />
-<meta property="og:image:height" content="1092" />
+<meta property="og:url" content="https://yasna.clinic/zhurnal.html" />
+<meta property="og:title" content="Журнал ЯСНА — статьи о косметологии и уходе" />
+<meta property="og:description" content="Понятные статьи о процедурах эстетической медицины — как устроены методики, чем они отличаются и как выбрать подходящую вместе с врачом." />
+<meta property="og:image" content="https://yasna.clinic/assets/img/clinic/brand-yasna-concept.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="1600" />
 <meta property="og:locale" content="ru_RU" />
 <meta property="og:site_name" content="ЯСНА" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Цифровая лицензия — ЯСНА" />
-<meta name="twitter:description" content="QR-код и выписка из реестра лицензий Росздравнадзора клиники ЯСНА (приказ Минздрава России № 118н)." />
-<meta name="twitter:image" content="https://yasna.clinic/assets/img/logo/yasna-mark-color.png" />
+<meta name="twitter:title" content="Журнал ЯСНА — статьи о косметологии и уходе" />
+<meta name="twitter:description" content="Понятные статьи о процедурах эстетической медицины — как устроены методики, чем они отличаются и как выбрать подходящую вместе с врачом." />
+<meta name="twitter:image" content="https://yasna.clinic/assets/img/clinic/brand-yasna-concept.jpg" />
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://yasna.clinic/zhurnal.html",
+      "name": "Журнал ЯСНА",
+      "description": "Понятные статьи о процедурах эстетической медицины — как устроены методики, чем они отличаются и как выбрать подходящую вместе с врачом."
+    },
+    {
+      "@type": "ItemList",
+      "numberOfItems": 2,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://yasna.clinic/zhurnal-kakaya-chistka-podhodit.html",
+          "name": "Какая чистка лица подходит вам"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://yasna.clinic/zhurnal-botoks-i-biorevitalizaciya.html",
+          "name": "Ботокс и биоревитализация: в чём разница"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://yasna.clinic/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Журнал",
+          "item": "https://yasna.clinic/zhurnal.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<!-- Font Awesome is a large icon-font stylesheet used for a handful of small
-     UI icons; loading it render-blocking (as a plain <link rel="stylesheet">)
-     delays first paint sitewide for icons that are non-critical. Loaded
-     async via the standard preload+onload swap, with a <noscript> fallback
-     so it still renders normally with JS disabled. -->
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /></noscript>
-<!-- Explicit CSS cascade-layer order, declared before any layer is populated.
-     Tailwind v4 emits its own rules inside named layers (properties, theme,
-     base, components, utilities); our hand-written site.css is also wrapped
-     in a layer ("site") so it participates in the same cascade instead of
-     unconditionally beating every layered Tailwind utility (per spec,
-     unlayered CSS always outranks layered CSS regardless of specificity).
-     Placing "site" between components and utilities means: Tailwind utility
-     classes in the HTML (e.g. h-[42px]) always win over our custom styles,
-     and our custom styles always win over Tailwind's base reset. -->
 <style>@layer properties, theme, base, components, site, utilities;</style>
-<!-- Tailwind is precompiled at build time (see /build/tw) — no runtime CDN/JIT
-     dependency, so styling never depends on a third-party script loading. -->
 <link rel="stylesheet" href="/assets/css/tailwind.css?v=20260821b" />
 <link rel="stylesheet" href="/assets/css/site.css?v=20260821b" /><!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -106,60 +135,33 @@
 </header>
 <main>
 <section class="pt-[120px] pb-16">
-  <div class="max-w-4xl mx-auto px-6 lg:px-10 reveal">
-    <div class="eyebrow">Правовая информация</div>
-    <h1 class="serif text-4xl sm:text-5xl lg:text-6xl text-graphite mt-4">Цифровая <span class="italic">лицензия</span></h1>
-    <p class="mt-5 text-silverDeep max-w-2xl leading-relaxed">В соответствии с требованиями к сайтам медицинских организаций, действующими с 1 сентября 2025 года (Приказ Минздрава России № 118н от 13.03.2025), клиника публикует QR-код и выписку из реестра лицензий Росздравнадзора, заверенную усиленной квалифицированной электронной подписью (УКЭП).</p>
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 reveal">
+    <div class="eyebrow">Журнал ЯСНА</div>
+    <h1 class="serif text-4xl sm:text-5xl lg:text-6xl text-graphite mt-4">Понятно <span class="italic">о процедурах</span></h1>
+    <p class="mt-5 text-silverDeep max-w-2xl leading-relaxed">Разбираем методики эстетической медицины простым языком: как они устроены, чем отличаются друг от друга и как выбрать подходящую вместе с врачом. Без обещаний результата и лишних терминов.</p>
   </div>
 </section>
-
 <section class="pb-24">
-  <div class="max-w-4xl mx-auto px-6 lg:px-10">
-    <div class="card p-8 lg:p-12 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-10 items-start reveal">
-      <div class="flex flex-col items-center gap-4">
-        <img src="/assets/img/license-qr.png" alt="QR-код — реестр лицензий Росздравнадзора" class="w-44 h-44 border border-line rounded-xl p-2" />
-        <span class="text-[10px] uppercase tracking-wide2 text-silverDeep text-center">Скан для проверки лицензии в реестре Росздравнадзора</span>
-      </div>
-      <div class="space-y-4 text-sm">
-        <div>
-          <div class="text-[11px] uppercase tracking-wide2 text-silverDeep mb-1">Наименование медицинской организации</div>
-          <p class="text-graphite">ООО «Бьютироуз» (товарный знак «ЯСНА»)</p>
+  <div class="max-w-6xl mx-auto px-6 lg:px-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="/zhurnal-kakaya-chistka-podhodit.html" class="group block card overflow-hidden reveal">
+        <div class="overflow-hidden h-52 card-img-wrap"><picture><source srcset="/assets/img/services/service-chistka-lica.webp" type="image/webp" /><img class="card-img w-full h-full object-cover" src="/assets/img/services/service-chistka-lica.jpg" alt="Какая чистка лица подходит вам" loading="lazy" /></picture></div>
+        <div class="p-6">
+          <span class="text-[10px] uppercase tracking-wide2 text-silverDeep">Журнал ЯСНА</span>
+          <h2 class="serif text-2xl text-graphite mt-2 leading-snug">Какая чистка лица подходит вам</h2>
+          <p class="text-silverDeep text-sm mt-3 leading-relaxed">Разбираемся, чем механическая чистка лица отличается от ультразвуковой и комбинированной, кому что подходит и как выбрать процедуру вместе с косметологом.</p>
+          <span class="mt-4 inline-flex items-center gap-2 text-[11px] uppercase tracking-wide2 text-graphite">Читать <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
         </div>
-        <div>
-          <div class="text-[11px] uppercase tracking-wide2 text-silverDeep mb-1">Номер лицензии</div>
-          <p class="text-graphite">Л041-01137-77/00349140</p>
+      </a>
+      <a href="/zhurnal-botoks-i-biorevitalizaciya.html" class="group block card overflow-hidden reveal">
+        <div class="overflow-hidden h-52 card-img-wrap"><picture><source srcset="/assets/img/services/service-botulinoterapiya.webp" type="image/webp" /><img class="card-img w-full h-full object-cover" src="/assets/img/services/service-botulinoterapiya.jpg" alt="Ботокс и биоревитализация: в чём разница" loading="lazy" /></picture></div>
+        <div class="p-6">
+          <span class="text-[10px] uppercase tracking-wide2 text-silverDeep">Журнал ЯСНА</span>
+          <h2 class="serif text-2xl text-graphite mt-2 leading-snug">Ботокс и биоревитализация: в чём разница</h2>
+          <p class="text-silverDeep text-sm mt-3 leading-relaxed">Объясняем простыми словами, чем ботокс отличается от биоревитализации, на что влияет каждая процедура и как их обычно сочетают в практике косметолога.</p>
+          <span class="mt-4 inline-flex items-center gap-2 text-[11px] uppercase tracking-wide2 text-graphite">Читать <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
         </div>
-        <div>
-          <div class="text-[11px] uppercase tracking-wide2 text-silverDeep mb-1">Лицензирующий орган</div>
-          <p class="text-graphite">Департамент здравоохранения города Москвы / Росздравнадзор</p>
-        </div>
-        <div>
-          <div class="text-[11px] uppercase tracking-wide2 text-silverDeep mb-1">Адрес осуществления деятельности</div>
-          <p class="text-graphite">г. Москва, ул. Ходынская, д. 2 (Западная башня)</p>
-        </div>
-        <div>
-          <div class="text-[11px] uppercase tracking-wide2 text-silverDeep mb-1">Реестр лицензий Росздравнадзора</div>
-          <a href="https://roszdravnadzor.gov.ru/" target="_blank" rel="noopener" class="underline hover:text-graphite text-graphite">Открыть публичный реестр →</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-8 card p-7 reveal" style="border-color:#2E2E2E;">
-      <h2 class="serif text-xl text-graphite mb-3"><i class="fa-solid fa-file-signature text-graphite mr-2"></i>Выписка из реестра лицензий (УКЭП)</h2>
-      <p class="text-silverDeep text-sm leading-relaxed mb-4">Актуальная выписка из реестра лицензий по состоянию на 23.08.2026, сформированная на официальном портале Росздравнадзора и подписанная усиленной квалифицированной электронной подписью регулятора, доступна ниже отдельным PDF-файлом.</p>
-      <div class="flex flex-wrap gap-3">
-        <a href="/assets/docs/license-extract.pdf" class="btn btn-outline btn-sm whitespace-normal text-center leading-snug w-full sm:w-auto"><i class="fa-solid fa-download shrink-0"></i> Скачать выписку (PDF, УКЭП)</a>
-        <a href="/assets/docs/license-extract.pdf.sig" class="btn btn-outline btn-sm whitespace-normal text-center leading-snug w-full sm:w-auto" style="opacity:.75;"><i class="fa-solid fa-signature shrink-0"></i> Файл подписи (.sig)</a>
-      </div>
-    </div>
-
-    <div class="mt-8 card p-7 reveal">
-      <h2 class="serif text-xl text-graphite mb-3">Дополнительные документы</h2>
-      <ul class="text-sm text-graphite space-y-2 list-disc pl-5">
-        <li>Карточки врачей клиники — образование, аккредитация, сертификаты: <a href="/doctors.html" class="underline hover:text-graphite">страница «Врачи»</a></li>
-        <li>Структура клиники по функционально-гигиеническим блокам (СП 2.1.4284-26): <a href="/about.html" class="underline hover:text-graphite">страница «О клинике»</a></li>
-        <li>Политика обработки персональных данных: <a href="/privacy-policy.html" class="underline hover:text-graphite">открыть</a></li>
-      </ul>
+      </a>
     </div>
   </div>
 </section>
