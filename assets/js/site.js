@@ -133,4 +133,39 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('mouseup', end);
     window.addEventListener('touchend', end);
   });
+
+  // Yandex.Metrika conversion goals (CRO). Goal names below must be created
+  // as "JS event" goals in the Metrika counter (111901755) dashboard —
+  // see YANDEX_METRIKA_GOALS_SETUP.md for exact steps. This code only sends
+  // the events; it does not create the goals themselves.
+  (function () {
+    var METRIKA_ID = 111901755;
+    function reachGoal(name) {
+      if (typeof window.ym === 'function') {
+        try { window.ym(METRIKA_ID, 'reachGoal', name); } catch (e) {}
+      }
+    }
+
+    // Event delegation so this works for links present anywhere on any page,
+    // including ones added after this script runs (e.g. mobile nav clones).
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (/^tel:/i.test(href)) {
+        reachGoal('click_phone');
+      } else if (/wa\.me|api\.whatsapp\.com/i.test(href)) {
+        reachGoal('click_whatsapp');
+      } else if (/yclients\.com/i.test(href)) {
+        reachGoal('click_booking');
+      }
+    }, true);
+
+    // Contact form submission (contacts.html — posts to FormSubmit.co).
+    document.querySelectorAll('form[action*="formsubmit.co"]').forEach(function (form) {
+      form.addEventListener('submit', function () {
+        reachGoal('submit_contact_form');
+      });
+    });
+  })();
 });

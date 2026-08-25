@@ -2,7 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://yasna.clinic/</loc><lastmod>2026-08-17</lastmod><priority>1.0</priority></url>
   <url><loc>https://yasna.clinic/about.html</loc><lastmod>2026-08-17</lastmod><priority>0.8</priority></url>
-  <url><loc>https://yasna.clinic/doctors.html</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yasna.clinic/doctors.html</loc><lastmod>2026-08-24</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yasna.clinic/doctor-natalya-savelyeva.html</loc><lastmod>2026-08-24</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yasna.clinic/doctor-arina-yasonova.html</loc><lastmod>2026-08-24</lastmod><priority>0.6</priority></url>
   <url><loc>https://yasna.clinic/contacts.html</loc><lastmod>2026-08-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://yasna.clinic/events.html</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority></url>
   <url><loc>https://yasna.clinic/license.html</loc><lastmod>2026-08-17</lastmod><priority>0.8</priority></url>
