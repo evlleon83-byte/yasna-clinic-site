@@ -204,7 +204,7 @@ window.SITE_SERVICES = [
     "type": "service"
   },
   {
-    "title": "PRP-терапия",
+    "title": "Плазмолифтинг (PRP-терапия)",
     "desc": "Восстановление кожи собственной плазмой крови.",
     "url": "usluga-inekcionnaya-prp-terapiya.html",
     "category": "Инъекционная косметология",
