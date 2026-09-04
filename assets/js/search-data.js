@@ -391,5 +391,12 @@ window.SITE_SERVICES = [
     "url": "doctor-arina-yasonova.html",
     "category": "Врачи",
     "type": "doctor"
+  },
+  {
+    "title": "Юлия Корнякова",
+    "desc": "Врач-косметолог-эстетист ЯСНА · эстетическая и аппаратная косметология.",
+    "url": "doctor-yuliya-kornyakova.html",
+    "category": "Врачи",
+    "type": "doctor"
   }
 ];
