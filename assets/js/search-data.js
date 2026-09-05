@@ -8,7 +8,7 @@ window.SITE_SERVICES = [
     "type": "service"
   },
   {
-    "title": "E-Light",
+    "title": "Фотоомоложение (E-light)",
     "desc": "Свет и радиочастоты для тона и упругости.",
     "url": "usluga-apparatnaya-e-light.html",
     "category": "Аппаратная косметология",
