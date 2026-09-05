@@ -64,13 +64,6 @@ window.SITE_SERVICES = [
     "type": "service"
   },
   {
-    "title": "SLIM SHAPE / Эндосфера",
-    "desc": "Компрессионная микровибрация против отёков и «апельсиновой корки».",
-    "url": "usluga-apparatnaya-slim-shape-endosfera.html",
-    "category": "Аппаратная косметология",
-    "type": "service"
-  },
-  {
     "title": "SMAS-лифтинг",
     "desc": "Ультразвуковая подтяжка на глубоком уровне.",
     "url": "usluga-apparatnaya-smas-lifting.html",
